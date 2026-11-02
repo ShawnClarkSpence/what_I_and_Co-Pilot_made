@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WritersJumbler Repository Downloads</title>
+<style>
+:root{--bg:#090d15;--panel:#111827;--panel2:#182235;--text:#edf4ff;--muted:#9eb0c9;--blue:#298cff;--green:#28c76f;--red:#ef5350;--gold:#ffc857;--line:#293956}*{box-sizing:border-box}body{margin:0;font:15px/1.45 Arial,sans-serif;background:linear-gradient(135deg,#080b12,#10192b);color:var(--text)}header{padding:26px 18px;text-align:center;border-bottom:1px solid var(--line)}h1{margin:0 0 6px;color:#63aaff}.sub{color:var(--muted)}main{max-width:1150px;margin:auto;padding:18px}.toolbar,.status,.account,.log{background:rgba(17,24,39,.94);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:16px}.toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center}button,.linkbtn{border:0;border-radius:9px;padding:10px 14px;font-weight:bold;cursor:pointer;text-decoration:none;color:white;background:var(--blue)}button.stop{background:var(--red)}button.secondary,.linkbtn.secondary{background:#35445f}button:disabled{opacity:.45;cursor:not-allowed}.statusgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.metric{background:var(--panel2);padding:10px;border-radius:9px}.metric strong{display:block;color:#63aaff;font-size:18px}.progress{height:12px;background:#25334b;border-radius:20px;overflow:hidden;margin-top:12px}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .25s}.account h2{margin:0 0 3px}.acctlinks{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.repo{display:grid;grid-template-columns:minmax(200px,1fr) 150px auto;gap:10px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}.repo:first-of-type{border-top:0}.name{font-weight:bold;word-break:break-word}.meta{color:var(--muted);font-size:13px}.actions{display:flex;gap:7px;flex-wrap:wrap}.actions a,.actions button{padding:8px 10px;font-size:12px}.update{color:var(--gold)}#log{max-height:230px;overflow:auto;background:#070b12;padding:10px;border-radius:8px;font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap}.notice{color:var(--gold);margin:0}.footer{text-align:center;color:var(--muted);padding:8px 0 25px}@media(max-width:720px){.repo{grid-template-columns:1fr}.actions{justify-content:flex-start}}
+</style>
+</head>
+<body>
+<header><h1>WritersJumbler Repository Downloads</h1><div class="sub">writersjumbler.com • S0001Light • ShawnClarkSpence</div></header>
+<main>
+<section class="toolbar">
+<button id="all">Download ALL Repositories</button><button id="stop" class="stop" disabled>Stop</button><button id="prev" class="secondary">Previous</button><button id="next" class="secondary">Next</button><a class="linkbtn secondary" href="https://www.writersjumbler.com/" target="_blank" rel="noopener">WritersJumbler.com</a><button id="clear" class="secondary">Clear Log</button>
+</section>
+<section class="status"><div class="statusgrid"><div class="metric">Repository<strong id="current">Ready</strong></div><div class="metric">Progress<strong id="progressText">0 / 0</strong></div><div class="metric">Next download<strong id="countdown">--</strong></div><div class="metric">Session<strong id="session">Not started</strong></div></div><div class="progress"><div class="bar" id="bar"></div></div><p class="notice">Your browser may ask you to allow multiple automatic downloads. Downloads are started 5 seconds apart.</p></section>
+<div id="accounts"></div>
+<section class="log"><h2>Download Activity</h2><div id="log" aria-live="polite">Ready.</div></section>
+<div class="footer">WritersJumbler Repository Download Center</div>
+</main>
+<script>
+(()=>{
+const accounts=[
+{name:'S0001Light',profile:'https://github.com/S0001Light?tab=repositories',repos:[
+['KJVliteBible-for-Microsoft-Office-OpenOffice-and-LibreOffice-with-Macro','Updated yesterday'],['SomethingNew_Files','Updated 3 days ago'],['Games-from-365-Co-Pilot-and-I','Updated 3 days ago'],['LOCAL_DOSFTP','Updated last week'],['Python-calculators_SCS','Updated 2 weeks ago'],['pygameFilesMore','Updated 3 weeks ago'],['ChatPrograms','Updated last month'],['Windows-11-Right-Click-Menu-Fix---Only-one-menu-and-repair-file','Updated on Oct 1'],['myReaderApp','Updated on Sep 25'],['scsBlenderFiles','Updated on Sep 25'],['ForAllYouWomen','Updated on Sep 23'],['WritersJumblerRecordingBrowser','Updated on Sep 21'],['Screensaver-and-App-Co-Pilot-Helped-Make','Updated on Sep 21'],['theReal-WritersJumbler','Updated on Sep 5'],['Quit-Smoking-Tracker','Updated on Sep 4'],['SHELLGUARD---A-TWO-PASSWORD-SOLUTION---CoPilot-and-I','Updated on Sep 2'],['WorkingWithLibreOfficeSheets','Updated on Aug 24'],['ImgAbove45View','Updated on Aug 4'],['WritersJumbler-PythonArt','Updated on Jul 25'],['ArchiveDataSetCreator---ADSC---SCS','Updated on Jul 7'],['Rearrangers-WritersJumbler','Updated on Jun 10'],['XandY_madeInSomeTimeWithPythonWritersJumblerDotCom','Updated on May 20'],['mineCraftPi-Build','Updated on Mar 22'],['Jukebox','Updated on Mar 13'],['NumbersToSonicPi','Updated on Dec 30, 2025'],['BuildMinecraftWithPythonThonnyAndpi-MinecraftandOffice','Updated on Oct 12, 2025'],['DosBatchFiles','Updated on Oct 12, 2025'],['Shufflers','Updated on Oct 12, 2025'],['DrumsSoundsForMacro','Updated on Oct 12, 2025'],['PygameCameraApplication-SCS','Updated on Oct 12, 2025']]},
+{name:'ShawnClarkSpence',profile:'https://github.com/ShawnClarkSpence?tab=repositories',repos:[
+['Recipes','Updated 4 days ago'],['RandomDrawing','Updated 5 days ago'],['what_I_and_Co-Pilot_made','Updated last week'],['myOldSite-TheOilDepotDotCom','Updated 3 weeks ago'],['wjOnlineBrowser','Updated on Sep 28'],['WritersJumbler-5-Column-Dictionary-App','Updated on Sep 27'],['HTML---Microsoft-Co-Pilot-and-I---Calendar','Updated on Sep 27'],['Writers-Jumbler-with-Offline-Viewer-V2','Updated on Sep 23'],['WritersJumblerDotCom','Updated on Sep 22'],['wjOnlineforPhoneAndTabletWithNotMyEditViewerApp','Updated on Sep 16'],['WritersJumblerDotCOMexe','Updated on Sep 11']]}
+];
+let flat=[],running=false,index=0,timer=null,tick=null,left=5;
+const $=id=>document.getElementById(id), root=$('accounts');
+function repoURL(a,r){return `https://github.com/${a}/${r}`}
+function zipURL(a,r){return `${repoURL(a,r)}/archive/refs/heads/main.zip`}
+function stamp(){return new Date().toLocaleString()}
+function log(s){$('log').textContent=`[${stamp()}] ${s}\n`+$('log').textContent}
+accounts.forEach(a=>{const s=document.createElement('section');s.className='account';s.innerHTML=`<h2>${a.name}</h2><div class="meta">GitHub repositories • archive branch: ${a.name==='S0001Light'?'SzWJ':'main'}</div><div class="acctlinks"><a class="linkbtn secondary" target="_blank" rel="noopener" href="${a.profile}">Open ${a.name} on GitHub</a></div>`;a.repos.forEach(([r,u])=>{flat.push({account:a.name,repo:r,zip:`https://github.com/${a.name}/${r}/archive/refs/heads/${a.name==='S0001Light'?'SzWJ':'main'}.zip`});const d=document.createElement('div');d.className='repo';d.innerHTML=`<div><div class="name">${r}</div><div class="meta">github.com/${a.name}/${r}</div><div class="meta">ZIP: ${a.name==='S0001Light'?'SzWJ.zip':'main.zip'}</div></div><div class="update">${u}</div><div class="actions"><a class="linkbtn secondary" target="_blank" rel="noopener" href="${repoURL(a.name,r)}">GitHub Repo</a><button type="button">Download ZIP</button></div>`;d.querySelector('button').onclick=()=>download({account:a.name,repo:r,zip:`https://github.com/${a.name}/${r}/archive/refs/heads/${a.name==='S0001Light'?'SzWJ':'main'}.zip`},false);s.appendChild(d)});root.appendChild(s)});
+$('progressText').textContent=`0 / ${flat.length}`;
+function download(x,auto=true){const a=document.createElement('a');a.href=x.zip||zipURL(x.account,x.repo);a.download='';a.style.display='none';document.body.appendChild(a);a.click();a.remove();$('current').textContent=`${x.account}/${x.repo}`;log(`${auto?'AUTO':'MANUAL'}: requested ${x.account}/${x.repo}.zip`)}
+function update(p){$('progressText').textContent=`${Math.min(p,flat.length)} / ${flat.length}`;$('bar').style.width=`${flat.length?Math.min(100,p/flat.length*100):0}%`}
+function stop(done=false){running=false;clearTimeout(timer);clearInterval(tick);timer=tick=null;$('stop').disabled=true;$('all').disabled=false;$('countdown').textContent='--';$('session').textContent=done?'Completed':'Stopped';log(done?'Download sequence completed.':'Download sequence stopped.')}
+function schedule(){if(!running)return;if(index>=flat.length){stop(true);return}left=5;$('countdown').textContent='5 sec';clearInterval(tick);tick=setInterval(()=>{left--;$('countdown').textContent=left>0?`${left} sec`:'Downloading...'},1000);timer=setTimeout(()=>{clearInterval(tick);if(!running)return;download(flat[index],true);index++;update(index);schedule()},5000)}
+$('all').onclick=()=>{if(running)return;running=true;index=0;update(0);$('all').disabled=true;$('stop').disabled=false;$('session').textContent=stamp();log(`Started all-repository sequence: ${flat.length} repositories, 5-second interval.`);schedule()};
+$('stop').onclick=()=>stop(false);
+$('prev').onclick=()=>{index=Math.max(0,index-1);const x=flat[index];$('current').textContent=`${x.account}/${x.repo}`;update(index)};
+$('next').onclick=()=>{index=Math.min(flat.length-1,index+1);const x=flat[index];$('current').textContent=`${x.account}/${x.repo}`;update(index)};
+$('clear').onclick=()=>{$('log').textContent='Log cleared.'};
+})();
+</script>
+</body>
+</html>
